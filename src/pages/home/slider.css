@@ -1,0 +1,119 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-wrapper {
+  height: 90 !important;
+}
+.swiper {
+  width: 100%;
+  height: 88vh;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000 !important;
+  opacity: 1;
+  background: rgba(0, 0, 0);
+}
+
+.swiper-pagination-bullet-active {
+  background: #18bb18;
+}
+/* /////////////////////////////////// */
+/* Default Style */
+.slider_info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 5rem 4rem;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+.slider_info > h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.slider_info h3:first-child {
+  color: #18bb18;
+}
+.slider_info > p {
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  margin-bottom: 1rem;
+}
+.slider_info > span {
+  font-size: 14px;
+  width: 70%;
+  text-align: start;
+  line-height: 1.8;
+}
+.slider_info_button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.slider_info_button > button {
+  margin-right: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+.slider_info_button > button:hover {
+  background: #18bb18;
+}
+
+/* media query */
+@media screen and (min-width: 768px) {
+  .slider_info {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slider_info {
+    padding: 6rem;
+  }
+  .slider_info > span {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-slide img {
+    object-fit: contain;
+  }
+  .slider_info {
+    padding: 8rem 12rem;
+  }
+}

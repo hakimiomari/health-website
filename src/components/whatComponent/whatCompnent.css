@@ -1,0 +1,210 @@
+.what_header {
+  width: 100%;
+  padding: 2rem;
+  background: #18bb18;
+  text-align: center;
+}
+.what_header > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.what_we_do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.top_what_we_do {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.top_what_we_do > h2 {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.725rem;
+}
+.top_what_we_do > p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+/* middle */
+.middle_what_we_do {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.middle_left_what_we_do,
+.middle_right_what_we_do {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.middle_left_first,
+.middle_left_second,
+.middle_right_first,
+.middle_right_second {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.middle_left_first > img,
+.middle_left_second > img,
+.middle_right_first > img,
+.middle_right_second > img {
+  width: 50px;
+}
+
+.bottom_what_we_do {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.bottom_what_we_do > a {
+  width: 100%;
+  text-align: center;
+}
+.bottom_what_we_do > a > button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.bottom_what_we_do > a > button:hover {
+  background: #18bb18;
+}
+@media screen and (min-width: 400px) {
+  .what_header > h2 {
+    font-size: 3rem;
+  }
+  .what_we_do {
+    padding: 4rem 2rem;
+  }
+  .top_what_we_do > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .top_what_we_do > p {
+    font-size: 14px;
+  }
+  .middle_left_first > span,
+  .middle_left_second > span,
+  .middle_right_first > span,
+  .middle_right_second > span {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 578px) {
+  .middle_what_we_do {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .middle_left_what_we_do,
+  .middle_right_what_we_do {
+    flex: 1;
+  }
+  .middle_left_first,
+  .middle_left_second,
+  .middle_right_first,
+  .middle_right_second {
+    gap: 0.725rem;
+  }
+  .bottom_what_we_do {
+    margin: 3rem 0 2rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top_what_we_do {
+    margin-bottom: 3rem;
+  }
+  .middle_what_we_do {
+    gap: 2rem;
+  }
+  .top_what_we_do > h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .top_what_we_do > p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .middle_left_first,
+  .middle_left_second,
+  .middle_right_first,
+  .middle_right_second {
+    gap: 1rem;
+  }
+  .middle_left_first > img,
+  .middle_left_second > img,
+  .middle_right_first > img,
+  .middle_right_second > img {
+    width: 65px;
+  }
+  .middle_left_first > span,
+  .middle_left_second > span,
+  .middle_right_first > span,
+  .middle_right_second > span {
+    font-size: 18px;
+  }
+  .bottom_what_we_do {
+    margin: 4rem 0 2rem 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .what_we_do {
+    padding: 6rem 7rem;
+  }
+  .middle_left_first > img,
+  .middle_left_second > img,
+  .middle_right_first > img,
+  .middle_right_second > img {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what_we_do {
+    padding: 6rem 8rem;
+  }
+  .top_what_we_do {
+    margin-bottom: 3rem;
+  }
+  .top_what_we_do > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2;
+  }
+  .top_what_we_do > p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .middle_left_first > img,
+  .middle_left_second > img,
+  .middle_right_first > img,
+  .middle_right_second > img {
+    width: 100px;
+  }
+  .middle_left_first > span,
+  .middle_left_second > span,
+  .middle_right_first > span,
+  .middle_right_second > span {
+    font-size: 22px;
+  }
+}

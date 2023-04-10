@@ -1,0 +1,90 @@
+.home {
+  width: 100%;
+  background: #fff;
+}
+/* about */
+.about {
+  background-image: url("../../assets/about-bg.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.about > div:first-child {
+  display: flex;
+  justify-content: center;
+}
+.about > div > h2 {
+  padding: 1rem 2rem;
+  margin: 4rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  border: 1px solid #18bb18;
+}
+.about > img {
+  object-fit: contain;
+  width: 60%;
+}
+.about > div {
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.about > div > p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555554;
+}
+.about > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about > a > button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 3px;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about > a > button:hover {
+  background: #18bb18;
+}
+@media screen and (min-width: 578px) {
+  .about > div {
+    padding: 1rem 2rem;
+  }
+  .about > div > h2 {
+    margin: 4rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    padding: 1rem 3rem;
+    border: 1px solid #18bb18;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about > div {
+    padding: 1rem 8rem;
+  }
+  .about > div > h2 {
+    margin: 4rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+    padding: 1rem 4rem;
+    border: 1px solid #18bb18;
+  }
+}
+
+/* //// end of about ////////////// */

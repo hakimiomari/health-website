@@ -1,0 +1,77 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact_header {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background: #18bb18;
+}
+.contact_header > h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  gap: 2rem;
+}
+.contact > form .form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact > form .form_group > input {
+  padding: 1rem;
+  border-radius: 30px;
+}
+.contact > form .btn {
+  width: 100%;
+  margin: 1rem 0;
+}
+.contact > form .btn > button {
+  padding: 1rem 3rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.contact > form .btn > button:hover {
+  background: #18bb18;
+}
+@media screen and (min-width: 400px) {
+  .contact_header > h2 {
+    font-size: 3rem;
+  }
+  .contact > form {
+    padding: 4rem 2rem;
+  }
+}
+@media screen and (min-width: 578px) {
+  .contact > form {
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact > form {
+    padding: 8rem 4rem;
+  }
+  .contact > form .form_group {
+    width: 100%;
+    flex-direction: row;
+  }
+  .contact > form .form_group > input {
+    width: 100%;
+  }
+}
